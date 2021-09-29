@@ -1,0 +1,150 @@
+canvas[resize] {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:10;
+    
+}
+
+body{
+
+}
+
+#settingswrap{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#video{
+
+}
+
+button{
+  height: 40px;
+  text-decoration: none;
+  color: #000000;
+  border: 2px solid #000000;
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all .35s;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  background-color: transparent;
+  margin-right: 1em;
+  margin-bottom: 1em;
+}
+
+input{
+  height: 34px;
+  width: 15em;
+  text-decoration: none;
+  color: #000000;
+  border: 2px solid #000000;
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all .35s;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  background-color: white;
+  margin-right: 1em;
+  margin-bottom: 1em;
+  -webkit-appearance: none;
+  margin: 0;
+  -moz-appearance: textfield;
+}
+
+button:hover{
+  color: white;
+  border: 2px solid #FFFFFF;
+}
+
+.darkhover:hover{
+  color: grey;
+  border: 2px solid grey;
+}
+
+
+.spacer{
+    width: 2em;
+}
+
+.seg{
+    margin-right: 2em;
+}
+
+.wide{
+    width: 100%;
+}
+
+
+
+span{
+
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: black;
+}
+
+a{
+    color: #AA00FF;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 65px;
+  height: 38px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 30px;
+  width: 30px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #00a6de;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
